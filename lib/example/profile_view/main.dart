@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_v2/example/profile_view/constant/constant.dart';
+import 'package:flutter_app_v2/example/profile_view/screens/profile_page.dart';
+import 'package:flutter_app_v2/example/profile_view/screens/splash_screen.dart';
 
-class MainProfileView extends StatelessWidget{
+class MainProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Profile View")),
-      body: Center(
-        child: Image.asset("images/boss.jpg"),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: <String, WidgetBuilder>{
+        PROFILE: (BuildContext context) => ProfilePage()
+      },
+      home: Scaffold(
+        appBar: AppBar(title: Text("Profile View")),
+        body: SplashScreen(),
       ),
     );
   }

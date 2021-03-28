@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_v2/example/profile_view/main.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,12 +16,7 @@ class MyApp extends StatelessWidget {
         // This is the the
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        appBar: AppBar(title: Text("Flutter App Bar"),),
-        body: Center(
-          child: Text("I am in center"),
-        ),
-      ),
+      home: MainProfileView(),
     );
   }
 }

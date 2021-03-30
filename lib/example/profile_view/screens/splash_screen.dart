@@ -56,7 +56,9 @@ class _SplashScreen extends State<SplashScreen> with SingleTickerProviderStateMi
                 padding: EdgeInsets.only(bottom: 30.0),
                 child: new Image.asset(
                   'images/profile.png',
-                  height: 25.0,
+                  // height: 25.0,
+                  width: animation.value * 250,
+                  height: animation.value * 250,
                   fit: BoxFit.scaleDown,
                 ))
           ],

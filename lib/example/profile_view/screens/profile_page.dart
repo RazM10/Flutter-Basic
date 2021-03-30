@@ -4,7 +4,7 @@ class ProfilePage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("Profile page"),
+      child: Text("Profile page", style: TextStyle(fontSize: 16),),
     );
   }
 }
